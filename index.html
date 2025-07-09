@@ -9,77 +9,80 @@
     <h1 id="title">Madridista Fan Survey</h1>
     <p id="description">Let your fandom flag fly.  Let us learn more about you and what made you a fan of the club!</p>
     <form id="survey-form">
-      <fieldset>
-        <legend>Full Name</legend>
-          <label for="mr">Mr</label>
-          <input id="mr" type="radio" name="mr" value="mr"/>
-          <label for="ms">Ms</label>  
-        <input id="ms" type="radio" name="ms" value="ms"/>
-          <label for="mrs">Mrs</label>
-        <input id="mrs" type="radio" name="mrs" value="mrs"/>
-          <br>
-      <label id="name-label">Name</label>
-        <input type="text" id="name" placeholder="Enter Name Here" required/>
+        <fieldset>
+            <legend>Full Name</legend>
+            <input id="mister-option" type="radio" name="option-one" value="option-one"/>
+            <label for="mister-option">Mr</label>
+            <input id="misses-option" type="radio" name="option-two" value="option-two"/>
+            <label for="misses-option">Ms</label>  
+            <input id="madame-option" type="radio" name="option-three" value="option-three"/>
+            <label for="madame-option">Mrs</label>
+            <br>
+            <label for="fullname" id="name-label">Name</label>
+            <input type="text" id="name" placeholder="Enter Name Here" required/>
+            <br>
+            <label id="suffix-label">Suffix</label>
+            <select id="dropdown">
+                <option value="jr">Jr</option>
+                <option value="sr">Sr</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Physical Address</legend>
+            <label id="address-label">Address</label>
+            <input type="text" id="address" placeholder="Enter Address Here" required>
+            <br>
+            <label id="city-label">City</label>
+            <input type="text" id="city">
+            <label id="dropdown">State</label>
+            <select name="states" id="dropdown">
+                <option value=""></option>
+                <option value="alabama">AL</option>
+                <option value="alaska">AK</option>
+                <option value="arizona">AZ</option>
+                <option value="arkansas">AR</option>
+            </select>
+            <label id="dropdown">Country</label>
+            <select name="country" id="dropdown">
+                <option value=""></option>
+                <option value="usa">USA</option>
+                <option value="canada">Canada</option>
+                <option value="mexico">Mexico</option>
+                <option value="bahamas">Bahamas</option>
+            </select>
+            <br>
+            <label id="email-label">Email</label>
+            <input type="email" id="email" placeholder="example@email.com" required/>
+        </fieldset>
+        <fieldset>
+            <legend>Fandom Interest</legend>
+            <label id="number-label">How Many Players Do You Like</label> 
+            <input type="number" id="number" placeholder="No Max" min="1" max="24"/>
+            <br>
+            <label>Which players?</label>
+            <br>
+            <textarea name="players" cols="20" rows="10"></textarea>
+            <br>
+            <label>How Did You Hear About The Club?</label>
+            <br>
+            <input id="website-option" type="radio" name="option-one" value="option-one"/>
+            <label for="website-option">website</label>
+            <input id="friend-option" type="radio" name="option-two" value="option-two"/>
+            <label for="friend-option">friend</label>  
+            <input id="tele-option" type="radio" name="option-three" value="option-three"/>
+            <label for="tele-option">tv</label>
         <br>
-      <label id="suffix-label">Suffix</label>
-        <select id="dropdown">
-            <option value="jr">Jr</option>
-            <option value="sr">Sr</option>
-        </select>
-      </fieldset>
-      <fieldset>
-        <legend>Physical Address</legend>
-      <label id="address-label">Address</label>
-        <input type="text" id="address" placeholder="Enter Address Here" required>
-        <label id="city-label">City</label>
-        <input type="text" id="city">
-        <label id="dropdown">State</label>
-        <select name="states" id="dropdown">
-            <option value=""></option>
-            <option value="alabama">AL</option>
-            <option value="alaska">AK</option>
-            <option value="arizona">AZ</option>
-            <option value="arkansas">AR</option>
-        </select>
-        <label id="dropdown">Country</label>
-        <select name="country" id="dropdown">
-            <option value=""></option>
-            <option value="usa">USA</option>
-            <option value="canada">Canada</option>
-            <option value="mexico">Mexico</option>
-            <option value="bahamas">Bahamas</option>
-        </select>
-        <br>
-        <label id="email-label">Email</label>
-        <input type="email" id="email" placeholder="example@email.com" required/>
-      </fieldset>
-      <fieldset>
-        <legend>Fandom Interest</legend>
-        <label id="number-label">How Many Players Do You Like</label> 
-        <input type="number" id="number" placeholder="No Max" min="1" max="24"/>
-        <br>
-        <label>Which players?</label>
-        <textarea name="players" cols="20" rows="10"></textarea>
-        <br>
-        <label id="referral">How Did You Hear About The Club?</label>
-        <br>
-            <label>website</label>
-            <input id="website" type="radio" name="website" value="website"/>
-            <label>friend</label>  
-            <input id="friend" type="radio" name="friend" value="friend"/>
-            <label>family</label>
-            <input id="family" type="radio" name="family" value="family">
-        <br>
-        <label id="pet-preference">How Long Have You Been A Fan?</label>
-        <br>
-        <input type="checkbox" id="oneyear" name="oneyear" value="oneyear">
-        <label>1 Year</label>
-        <input type="checkbox" id="twoyear" name="twoyear" value="twoyear">
-        <label>2 Years</label>
-        <br>
-        <label>Other Comments:</label>
-        <textarea name="other-comments" cols="20" rows="10"></textarea>
-      </fieldset>
+            <label id="pet-preference">How Long Have You Been A Fan?</label>
+            <br>
+            <input type="checkbox" id="oneyear" name="oneyear" value="oneyear">
+            <label>1 Year</label>
+            <input type="checkbox" id="twoyear" name="twoyear" value="twoyear">
+            <label>2 Years</label>
+            <br>
+            <label>Other Comments:</label>
+            <br>
+            <textarea name="other-comments" cols="20" rows="10"></textarea>
+        </fieldset>
         <button id="submit">Submit</button>
     </form>
   </body>
