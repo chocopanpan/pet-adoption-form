@@ -18,40 +18,42 @@
             <input id="madame-option" type="radio" name="option-three" value="option-three"/>
             <label for="madame-option">Mrs</label>
             <br>
-            <label for="fullname" id="name-label">Name</label>
-            <input type="text" id="name" placeholder="Enter Name Here" required/>
-            <br>
-            <label id="suffix-label">Suffix</label>
-            <select id="dropdown">
-                <option value="jr">Jr</option>
-                <option value="sr">Sr</option>
-            </select>
+            <label for="last-name" id="last-label">Last Name</label>
+            <input type="text" id="name" placeholder="last name..." required/>
+            <label for="first-name" id="name-label">First Name</label>
+            <input type="text" id="name" placeholder="first name..." required/>
+            <label for="middle-name" id="middle-label">Middle Name</label>
+            <input type="text" id="name" placeholder="If none, leave blank."/>
         </fieldset>
         <fieldset>
             <legend>Physical Address</legend>
-            <label id="address-label">Address</label>
+            <label for="address-label">Address</label>
             <input type="text" id="address" placeholder="Enter Address Here" required>
             <br>
-            <label id="city-label">City</label>
+            <label for="city-label">City</label>
             <input type="text" id="city">
-            <label id="dropdown">State</label>
-            <select name="states" id="dropdown">
+            <label for="state">State</label>
+            <select id="dropdown">
                 <option value=""></option>
                 <option value="alabama">AL</option>
                 <option value="alaska">AK</option>
                 <option value="arizona">AZ</option>
                 <option value="arkansas">AR</option>
             </select>
-            <label id="dropdown">Country</label>
-            <select name="country" id="dropdown">
+            <label for="country">Country</label>
+            <select id="dropdown">
                 <option value=""></option>
                 <option value="usa">USA</option>
                 <option value="canada">Canada</option>
                 <option value="mexico">Mexico</option>
                 <option value="bahamas">Bahamas</option>
             </select>
-            <br>
-            <label id="email-label">Email</label>
+        </fieldset>
+        <fieldset>
+          <legend>Contact Info</legend>
+          <label for="phone-number">Phone Number</label>
+          <input type="text" id="text" placeholder="XXX-XXX-XXXX"/>
+          <label id="email-label">Email</label>
             <input type="email" id="email" placeholder="example@email.com" required/>
         </fieldset>
         <fieldset>
